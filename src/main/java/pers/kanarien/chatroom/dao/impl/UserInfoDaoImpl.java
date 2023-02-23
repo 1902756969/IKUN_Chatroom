@@ -21,15 +21,15 @@ public class UserInfoDaoImpl implements UserInfoDao {
     @Override
     public void loadUserInfo() {
         // 设置用户基本信息，共9个用户
-        UserInfo userInfo = new UserInfo("001", "Member001", "001", "static/img/avatar/Member001.jpg");
-        UserInfo userInfo2 = new UserInfo("002", "Member002", "002", "static/img/avatar/Member002.jpg");
-        UserInfo userInfo3 = new UserInfo("003", "Member003", "003", "static/img/avatar/Member003.jpg");
-        UserInfo userInfo4 = new UserInfo("004", "Member004", "004", "static/img/avatar/Member004.jpg");
-        UserInfo userInfo5 = new UserInfo("005", "Member005", "005", "static/img/avatar/Member005.jpg");
-        UserInfo userInfo6 = new UserInfo("006", "Member006", "006", "static/img/avatar/Member006.jpg");
-        UserInfo userInfo7 = new UserInfo("007", "Member007", "007", "static/img/avatar/Member007.jpg");
-        UserInfo userInfo8 = new UserInfo("008", "Member008", "008", "static/img/avatar/Member008.jpg");
-        UserInfo userInfo9 = new UserInfo("009", "Member009", "009", "static/img/avatar/Member009.jpg");
+        UserInfo userInfo = new UserInfo("001", "IKUN001", "001", "static/img/avatar/Member001.jpg");
+        UserInfo userInfo2 = new UserInfo("002", "IKUN002", "002", "static/img/avatar/Member002.jpg");
+        UserInfo userInfo3 = new UserInfo("003", "IKUN003", "003", "static/img/avatar/Member003.jpg");
+        UserInfo userInfo4 = new UserInfo("004", "IKUN004", "004", "static/img/avatar/Member004.jpg");
+        UserInfo userInfo5 = new UserInfo("005", "IKUN005", "005", "static/img/avatar/Member005.jpg");
+        UserInfo userInfo6 = new UserInfo("006", "IKUN006", "006", "static/img/avatar/Member006.jpg");
+        UserInfo userInfo7 = new UserInfo("007", "IKUN007", "007", "static/img/avatar/Member007.jpg");
+        UserInfo userInfo8 = new UserInfo("008", "IKUN008", "008", "static/img/avatar/Member008.jpg");
+        UserInfo userInfo9 = new UserInfo("009", "IKUN009", "009", "static/img/avatar/Member009.jpg");
         
         // 设置用户好友列表
         userInfo.setFriendList(generateFriendList("001"));
@@ -43,7 +43,7 @@ public class UserInfoDaoImpl implements UserInfoDao {
         userInfo9.setFriendList(generateFriendList("009"));
         
         // 设置用户群列表，共1个群
-        GroupInfo groupInfo = new GroupInfo("01", "Group01", "static/img/avatar/Group01.jpg", null);
+        GroupInfo groupInfo = new GroupInfo("01", "真爱粉聊天群01", "static/img/avatar/Group02.jpg", null);
         List<GroupInfo> groupList = new ArrayList<GroupInfo>();
         groupList.add(groupInfo);
         userInfo.setGroupList(groupList);
@@ -56,15 +56,15 @@ public class UserInfoDaoImpl implements UserInfoDao {
         userInfo8.setGroupList(groupList);
         userInfo9.setGroupList(groupList);
         
-        Constant.userInfoMap.put("Member001", userInfo);
-        Constant.userInfoMap.put("Member002", userInfo2);
-        Constant.userInfoMap.put("Member003", userInfo3);
-        Constant.userInfoMap.put("Member004", userInfo4);
-        Constant.userInfoMap.put("Member005", userInfo5);
-        Constant.userInfoMap.put("Member006", userInfo6);
-        Constant.userInfoMap.put("Member007", userInfo7);
-        Constant.userInfoMap.put("Member008", userInfo8);
-        Constant.userInfoMap.put("Member009", userInfo9);
+        Constant.userInfoMap.put("IKUN001", userInfo);
+        Constant.userInfoMap.put("IKUN002", userInfo2);
+        Constant.userInfoMap.put("IKUN003", userInfo3);
+        Constant.userInfoMap.put("IKUN004", userInfo4);
+        Constant.userInfoMap.put("IKUN005", userInfo5);
+        Constant.userInfoMap.put("IKUN006", userInfo6);
+        Constant.userInfoMap.put("IKUN007", userInfo7);
+        Constant.userInfoMap.put("IKUN008", userInfo8);
+        Constant.userInfoMap.put("IKUN009", userInfo9);
     }
 
     @Override
@@ -87,15 +87,15 @@ public class UserInfoDaoImpl implements UserInfoDao {
     }
     
     private List<UserInfo> generateFriendList(String userId) {
-        UserInfo userInfo = new UserInfo("001", "Member001", "001", "static/img/avatar/Member001.jpg");
-        UserInfo userInfo2 = new UserInfo("002", "Member002", "002", "static/img/avatar/Member002.jpg");
-        UserInfo userInfo3 = new UserInfo("003", "Member003", "003", "static/img/avatar/Member003.jpg");
-        UserInfo userInfo4 = new UserInfo("004", "Member004", "004", "static/img/avatar/Member004.jpg");
-        UserInfo userInfo5 = new UserInfo("005", "Member005", "005", "static/img/avatar/Member005.jpg");
-        UserInfo userInfo6 = new UserInfo("006", "Member006", "006", "static/img/avatar/Member006.jpg");
-        UserInfo userInfo7 = new UserInfo("007", "Member007", "007", "static/img/avatar/Member007.jpg");
-        UserInfo userInfo8 = new UserInfo("008", "Member008", "008", "static/img/avatar/Member008.jpg");
-        UserInfo userInfo9 = new UserInfo("009", "Member009", "009", "static/img/avatar/Member009.jpg");
+        UserInfo userInfo = new UserInfo("001", "IKUN001", "001", "static/img/avatar/Member001.jpg");
+        UserInfo userInfo2 = new UserInfo("002", "IKUN002", "002", "static/img/avatar/Member002.jpg");
+        UserInfo userInfo3 = new UserInfo("003", "IKUN003", "003", "static/img/avatar/Member003.jpg");
+        UserInfo userInfo4 = new UserInfo("004", "IKUN004", "004", "static/img/avatar/Member004.jpg");
+        UserInfo userInfo5 = new UserInfo("005", "IKUN005", "005", "static/img/avatar/Member005.jpg");
+        UserInfo userInfo6 = new UserInfo("006", "IKUN006", "006", "static/img/avatar/Member006.jpg");
+        UserInfo userInfo7 = new UserInfo("007", "IKUN007", "007", "static/img/avatar/Member007.jpg");
+        UserInfo userInfo8 = new UserInfo("008", "IKUN008", "008", "static/img/avatar/Member008.jpg");
+        UserInfo userInfo9 = new UserInfo("009", "IKUN009", "009", "static/img/avatar/Member009.jpg");
         List<UserInfo> friendList = new ArrayList<UserInfo>();
         friendList.add(userInfo);
         friendList.add(userInfo2);
